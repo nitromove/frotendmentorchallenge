@@ -26,6 +26,7 @@ body {
 .testimonials {
     margin: 1.5rem;
     padding: 1.5rem;
+    display: grid;
 }
 
 header {
@@ -123,6 +124,18 @@ h3 {
 }
 
 @media (max-width:768px) {
+    .box1 {
+        order: 0;
+    }
+    .box2 {
+        order: 1;
+    }
+    .box3 {
+        order: 2;
+    }
+    .box4 {
+        order: 4;
+    }
     .box5{
         order: 3;
     }
