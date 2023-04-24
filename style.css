@@ -1,0 +1,124 @@
+@import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+
+
+body {
+    background-color: white;
+    font-family: 'Barlow semi condensed', sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1 {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 81%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top right 10%;
+    background-repeat: no-repeat;
+    padding: 5rem;
+}
+
+.testimonials {
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+header {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+header img {
+    border-radius: 500%;
+}
+
+h3 {
+    font-style: normal;
+    font-size: small;
+}
+
+
+.box1 > .card_text , .box2 > .card_text, .box3 > .card_text, .box4 > .card_text, .box5 > .card_text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card_text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box1, .box2,.box3, .box4, .box5 {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.box2 {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
+.box2 > .card_qoute {
+    color: hsl(210, 46%, 95%);
+}
+
+.box3 > .card_text, .box4 > .card_text{
+    color:  hsl(217, 19%, 35%);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.box5 {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+@media (min-width: 768px) {
+
+.testimonials {
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(244, 236, 236, 0.54);
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.box3 {
+    grid-column: 4;
+    grid-row: 1 / 3;
+}
+
+.box1 {
+    grid-column: 1 / 3;
+    background-color: hsl(263, 55%, 52%);
+}
+
+
+.box5 {
+    grid-column:  2 / 4;
+    grid-row: 2;
+}
+
+}
+
