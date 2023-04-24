@@ -122,3 +122,8 @@ h3 {
 
 }
 
+@media (max-width:768px) {
+    .box5{
+        order: 3;
+    }
+}
